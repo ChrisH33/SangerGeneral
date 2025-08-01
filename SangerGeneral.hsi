@@ -16,18 +16,6 @@
 #include "HSLFileDirectoryLib.hsl"
 #include "HSLExtensions\\File.hsl"
 #include "WSI\\FindDBPath\\FindDBPath.hs_"
-#include "Load Instructions (All)\\load_instructions\\load_instructions.hs_"
-#include "HSLML_STARLib.hsl"
-#include "WSI\\JSONSearch\\HSLJson.hsl"
-#include "Hamilton DriverTools\\Hamilton DriverTools.hsl"
-#include "HSLUtilLib2.hsl"
-#include "Labware_Property_Query\\Labware_Property_Query.hs_"
-#include "UV_Decontamination\\UvDecontaminationSub.hs_"
-#include "HSLExtensions\\Array3D.hsl"
-#include "ASWStandard\\ASWGlobal\\ASWGlobal.hsl"
-#include "HSLExtensions\\Venus.hsl"
-#include "HSLExtensions\\Drive.hsl"
-#include "WSI\\JSONSearch\\JSONSearch.hs_"
 #include "VirtualLabware_V2.hsl"
 /* {{ 2 "LibraryInsertLine" "" */ // }} ""
 // {{ 2 "TemplateIncludeBlock" ""
@@ -79,20 +67,12 @@ PTL::SetLoadingStateDefault("RecoveryOptionDefault", 0);
 PTL::SetLoadingStateDefault("KitLotCheckEnabled", hslFalse);
 LOOKUP::_InitLibrary();
 FINDDBPATH::_InitLibrary();
-LOAD_INSTRUCTIONS::_InitLibrary();
-LPQ::_InitLibrary();
-UVDECONTAMINATIONSUB::_InitLibrary();
-JSONSEARCH::_InitLibrary();
 // }} ""
 }
 function _ExitLibrary() {
 // {{ 2 "AutoExitBlock" ""
 LOOKUP::_ExitLibrary();
 FINDDBPATH::_ExitLibrary();
-LOAD_INSTRUCTIONS::_ExitLibrary();
-LPQ::_ExitLibrary();
-UVDECONTAMINATIONSUB::_ExitLibrary();
-JSONSEARCH::_ExitLibrary();
 // }} ""
 }
 // {{{ 5 "z_AdminDetect" "Begin"
@@ -2620,4 +2600,4 @@ return (_blnReturnValue);
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=ch33$$valid=0$$time=2025-07-02 17:35$$checksum=ed92ba42$$length=083$$
+// $$author=ch33$$valid=0$$time=2025-08-01 09:27$$checksum=1904ba2c$$length=083$$
